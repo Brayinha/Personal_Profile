@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home - ERPBioma</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="Login.css" />
+    <link rel="icon" href="img/bioma_borboleta.png">
+
+</head>
+
+<body>
+    <div class="login">
+
+        <div class="title">
+            <img src=img/bioma_borboleta.png height="70" width="70">
+            <h1>Fazer Login</h1>
+            <h3>Formulario do Brayan</h3>
+            <div class="mensagem"><br></br>
+            </div>
+        </div>
+        <form action="#">
+            <div class="btn">
+                <input id="user" type="text" maxlength="25" onkeydown="FocusInUser()" onblur="FocusNoUser()" required>
+                <label id="lbuser">Usuário</label>
+            </div>
+            <div class="btn">
+                <input id="pswd" type="password" maxlength="25" onkeydown="FocusInSenha()" onblur="FocusNoSenha()" required>
+                <label id="lbsenha">Senha</label>
+            </div>
+            <div class="content">
+                <div class="checkbox">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Mostrar Senha</label>
+                </div>
+                <div class="pass-link">
+                    <a href="ForgotPass.js">Esqueceu a Senha?</a></div>
+            </div>
+            <div class="btn">
+                <input type="submit" id="btn-login" value="Login">
+            </div>
+        </form>
+    </div>
+
+    <script src="login.js"></script>
+
+
+</body>
+
+</html>
