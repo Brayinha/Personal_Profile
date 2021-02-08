@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.loader {
+    text-align: center;
+    padding-bottom: 450px;
+    padding-top: 280px;
+    position: relative;
+    animation: pulse 3s infinite;
+    margin: 0 auto;
+    display: table;
+    margin-top: 50px;
+    animation-direction: alternate;
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+}
+
+@-webkit-keyframes pulse {
+    0% {
+        opacity: 0.10;
+        -webkit-transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        -webkit-transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1.2);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: 0.10;
+        transform: scale(1);
+    }
+    50% {
+        opacity: 0.5;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1.2);
+    }
+}
+
+body {
+    text-align: center;
+    background-size: 400% 400%;
+    background: #fff;
+    animation: gradient 15s ease infinite;
+    overflow-x: hidden;
+    overflow-Y: hidden;
+}
